@@ -1,0 +1,22 @@
+﻿<Window  x:Class="LiveVideos.Monitor"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LiveVideos"
+        mc:Ignorable="d"
+        Title="Monitor" Height="425" Width="580" Loaded="Window_Loaded" ScrollViewer.VerticalScrollBarVisibility="Hidden" ResizeMode="CanMinimize" Topmost="True">
+    
+    <Grid Background="Black">
+        <StackPanel Orientation="Horizontal" Height="20" Margin="5,5,0,0" VerticalAlignment="Top">
+            <Button x:Name="CNN" Content="CNN" Click="CNN_Click" Background="Black" Foreground="White" BorderBrush="{x:Null}"></Button>
+            <Button x:Name="NBC" Content="NBC" Margin="5,0,0,0" Click="NBC_Click" Background="Black" BorderBrush="{x:Null}" Foreground="White"></Button>
+            <Button x:Name="FOX" Content="Fox News" Margin="5,0,0,0" Click="FOX_Click" Background="Black" Foreground="White" BorderBrush="{x:Null}"></Button>
+            <Button x:Name="SKY" Content="Sky News" Margin="5,0,0,0" Click="SKY_Click" Background="Black" BorderBrush="{x:Null}" Foreground="White"></Button>
+            <Button x:Name="Bloomberg" Content="Bloomberg TV" Margin="5,0,0,0" Click="Bloomberg_Click" Background="Black" BorderBrush="{x:Null}" Foreground="White"></Button>
+            <Button x:Name="Russia" Content="Russia Today" Margin="5,0,0,0" Click="Russia_Click" Background="Black" Foreground="White" BorderBrush="{x:Null}"></Button>
+            <Button x:Name="France" Content="Frace 24" Margin="5,0,0,0" Click="France_Click" Background="Black" BorderBrush="{x:Null}" Foreground="White"></Button>
+        </StackPanel>
+        <WebBrowser VerticalAlignment="Bottom" x:Name="Browser" ScrollViewer.VerticalScrollBarVisibility="Hidden" Width="560" Height="360" ></WebBrowser>
+    </Grid>
+</Window>
